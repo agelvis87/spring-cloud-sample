@@ -1,0 +1,26 @@
+#================================= Application Data =================================#
+server:
+  port: 8761
+spring:
+  application:
+    name: spring-cloud-eureka-server
+#===========================  Eureka Server Configuration ===========================#
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+#=========================== Logging Configuration ==================================#
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        ws:
+          client:
+            MessageTracing:
+              received: TRACE
+              sent: DEBUG
+          server:
+            MessageTracing:
+              received: TRACE
+              sent: DEBUG 
